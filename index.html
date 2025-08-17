@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="bg-secondary">
+    <header class="header position-absolute">
       <div class="container">
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg">
@@ -29,7 +29,7 @@
             </button>
             <!-- /Navbar -Toggler -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Create Resume</a>
                 </li>
@@ -42,7 +42,12 @@
                   <a class="nav-link">Contact Us</a>
                 </li>
               </ul>
-              <a href="register-now.html" class="btn btn-outline-primary">Register Now <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="register-now.html" class="btn btn-outline-primary">
+                Register Now
+                <span class="bg-white rounded-circle icon-arrow-wrapper d-inline-block">
+                  <img src="images/icon-arrow-top.svg" alt="" class="icon">
+                </span>
+              </a>
             </div>
           </div>
         </nav>
@@ -52,6 +57,40 @@
     <!-- /Header -->
     <!-- Main -->
     <main>
+      <!-- Section - Intro -->
+      <section class="section-intro-banner">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-10 col-12 text-center">
+              <!-- Badge -->
+               <div class="badge bg-white text-dark d-flex justify-content-center align-items-center">
+                  <i class="icon-brief-case"></i> Your #1 Platform for Skill Sharing
+               </div>
+              <!-- /Badge -->
+              <h1>Showcase Your Mastery. Get Connected</h1>
+              <p>Create your profile, showcase your skills, and let employers find you.</p>
+              <!-- Form -->
+              <div class="form-wrapper">
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <button class="btn btn-primary w-100">Search</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+               <!-- /Form -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Section - Intro -->
     </main>
     <!-- /Main -->
     <script src="js/bootstrap.bundle.min.js"></script>

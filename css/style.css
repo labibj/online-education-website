@@ -1,0 +1,35 @@
+body {
+
+}
+
+.header {
+    top: 2rem;
+    left: 0;
+    right: 0;
+}
+
+.icon-arrow-wrapper {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.icon-arrow-wrapper .icon {
+    width: 0.75rem;
+    height: 0.75rem;
+}
+
+
+.section-intro-banner {
+    padding: 10rem 0 0 0;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    height: 100vh;
+}
+
+.icon-brief-case {
+    background-image: url('../images/icon-brief-case.svg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+}
