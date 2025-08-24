@@ -40,3 +40,39 @@ body {
 
 
 /* SwiperJS Team Setion - CSS End */
+
+/* card card-emerging Start */
+.card.card-emerging {
+    transition: all 0.3s ease-in-out;
+    transition-property: all;
+    cursor: pointer;
+    &:hover {
+        background-color: #E6F0FF !important;
+        transform: translate(0rem, -1rem);
+        box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 6px 8px 0;;
+        &.border-light-subtle {
+            border-color: #8AB9FF !important;
+        }
+    }
+}
+
+
+/* .card.card-emerging:hover {
+    background-color: #E6F0FF !important;
+}
+
+.card.card-emerging:hover .border-light-subtle {
+    border-color: #8AB9FF !important;
+} */
+
+/* card card-emerging End */
+
+
+/* Icon Notification Start */
+
+.icon-notification {
+    bottom: 0;
+    right: 0;
+}
+
+/* Icon Notification End */
