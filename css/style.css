@@ -76,3 +76,9 @@ body {
 }
 
 /* Icon Notification End */
+
+.bg-why-choose-masters-in-me {
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
