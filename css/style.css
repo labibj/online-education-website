@@ -82,3 +82,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+
+.column-count-2 {
+    column-count: 2;
+}
