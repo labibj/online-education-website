@@ -1471,12 +1471,12 @@
             <div class="accordion-item border-top shadow-lg">
               <h2 class="accordion-header">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
+                  How do I create an account on the job board?
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
                 <div class="accordion-body">
-                  <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  Use the search bar on the homepage to enter keywords related to your skills, job title, or preferred location. You can also use the advanced search filters to narrow down results by industry, job type (full-time, part-time, freelance), and experience level.
                 </div>
               </div>
             </div>
@@ -1533,6 +1533,27 @@
         </div>
       </section>
       <!-- /Section - FAQ -->
+      <!-- Section - Subscribe Newsletter -->
+       <section class="section-subscribe-newsletter py-5 bg-dark">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2 class="text-white">Unlock Your Potential</h2>
+              <p class="text-white">Stay updated with the latest courses, learning tips, and exclusive offers delivered directly to your inbox. Join our community of lifelong learners today!</p>
+              <!-- Form -->
+              <!-- <form> -->
+                <div class="d-flex gap-2">
+                  <input type="email" class="form-control" placeholder="Enter your email address">
+                  <!-- Button trigger modal -->
+                  <button class="btn btn-primary text-nowrap" data-bs-toggle="modal" data-bs-target="#subscribeNowModal">Subscribe Now</button>
+                </div>
+              <!-- </form> -->
+              <!-- /From -->
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- /Section - Subscribe Newsletter -->
     </main>
     <!-- /Main -->
     <!-- Footer -->
@@ -1618,6 +1639,31 @@
       </div>
     </footer>
     <!-- /Footer -->
+    <!-- Modal - Subscribe -->
+    <div class="modal fade" id="subscribeNowModal" tabindex="-1" aria-labelledby="subscribeNowModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <h2 class="modal-title fs-5 text-center" id="subscribeNowModalLabel">Thank You!</h2>
+          </div>
+          <div class="modal-body">
+            <div class="text-success text-center">
+              <div class="row">
+                <div class="col-lg-6 align-self-center">
+                  You have successfully subscribed to our newsletter!
+                </div>
+                <div class="col-lg-6">
+                  <img src="images/img-news-letter.webp" alt="img news letter" class="w-100">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
      <!-- JS Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- SwiperJS -->
