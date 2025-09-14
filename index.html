@@ -44,7 +44,7 @@
                   <a class="nav-link">Contact Us</a>
                 </li>
               </ul>
-              <a href="register-now.html" class="btn btn-outline-primary">
+              <a class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#registerNowModal">
                 Register Now
                 <span class="bg-white rounded-circle icon-arrow-wrapper d-inline-block">
                   <img src="images/icon-arrow-top.svg" alt="" class="icon">
@@ -82,11 +82,21 @@
                       </div>
                     </div>
                     <div class="col-lg-4">
-                      <button class="btn btn-primary w-100">Search</button>
+                      <button type="button" class="btn btn-outline-primary w-100" 
+        data-bs-toggle="popover" 
+        data-bs-title="Search for Talent" 
+        data-bs-content="Enter keywords like skills, job titles, or locations to find top professionals for your needs.">Search</button>
                     </div>
                   </div>
                 </form>
               </div>
+              <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 0%"></div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" style="width: 25%"></div>
+            </div>
+  
                <!-- /Form -->
             </div>
           </div>
@@ -460,6 +470,17 @@
                   </div>
                 </div>
                 <!-- /Second - Row -->
+                <!-- Pagination -->
+                 <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+                <!-- /Pagination -->
               </div>
               
 
@@ -1389,7 +1410,8 @@
                        </div>
                        <h3 class="card-title fs-4">Showcase Work</h3>
                        <p class="card-text">Showcase your project to stand out among all</p>
-                       <a href="#" class="btn btn-primary">Add Work</a>
+                       <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Add Work</a>
+
                      </div>
                    </div>
                   <!-- /Showcase work -->
@@ -1664,6 +1686,72 @@
         </div>
       </div>
     </div>
+    <!-- Modal - Register -->
+    <div class="modal fade" id="registerNowModal" tabindex="-1" aria-labelledby="registerNowModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerNowModalLabel">Register Now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6 order-1">
+                <!-- Registration Form -->
+                <form>
+                  <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" required>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                    <label class="form-check-label" for="termsCheck">I agree to the terms and conditions</label>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6 order-0">
+                <img src="images/img-register-now.jpg" alt="img register now" class="w-100">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary d-none" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Offcanvas - Add Work -->
+     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+    </div>
+    <div class="mb-3">
+      <label for="formFile" class="form-label">Upload the work</label>
+      <input class="form-control" type="file" id="formFile">
+    </div>
+    <div>
+      <button class="btn btn-primary" type="button">Upload</button>
+    </div>
+  </div>
+</div>
      <!-- JS Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- SwiperJS -->
